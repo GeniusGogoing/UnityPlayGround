@@ -8,6 +8,7 @@ public class InspectorEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        base.OnInspectorGUI();
         Player player = (Player)target;
         player.exp = EditorGUILayout.IntField("Exp", player.exp);
         EditorGUILayout.LabelField("level", player.Level.ToString());
